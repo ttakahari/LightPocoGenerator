@@ -71,7 +71,7 @@ namespace LightPocoGenerator
                             TableName       = (string)x["TABLE_NAME"],
                             ColumnName      = (string)x["COLUMN_NAME"],
                             DataType        = (string)x["DATA_TYPE"],
-                            IsNullable      = ((string)x["IS_NULLABLE"] == "NO"),
+                            IsNullable      = ((string)x["IS_NULLABLE"] == "YES"),
                             OrdinalPosition = (int)x["ORDINAL_POSITION"]
                         })
                         .GroupBy(x => x.TableName)
